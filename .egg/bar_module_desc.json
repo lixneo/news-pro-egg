@@ -1,1 +1,1 @@
-{"name": "bar","unitPath": "/Volumes/MMHD/code/news-pro/news-pro-egg/app/module/bar","clazzList": [{"name": "HomeController","filePath": "controller/home.ts"},{"name": "UserController","filePath": "controller/user.ts"}],"multiInstanceClazzList": [],"protos": []}
+{"name": "bar","unitPath": "E:\other-code\news-pro-vue3\api\app\module\bar","clazzList": [{"name": "HomeController","filePath": "controller\home.ts"},{"name": "UserController","filePath": "controller\user.ts"}],"multiInstanceClazzList": [],"protos": []}

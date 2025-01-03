@@ -1,1 +1,1 @@
-{"name": "foo","unitPath": "/Volumes/MMHD/code/news-pro/news-pro-egg/app/module/foo","clazzList": [{"name": "HelloService","filePath": "service/HelloService.ts"}],"multiInstanceClazzList": [],"protos": []}
+{"name": "foo","unitPath": "E:\other-code\news-pro-vue3\api\app\module\foo","clazzList": [{"name": "HelloService","filePath": "service\HelloService.ts"}],"multiInstanceClazzList": [],"protos": []}
