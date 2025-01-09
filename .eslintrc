@@ -1,7 +1,6 @@
 {
-  "root": true,
-  "extends": [
-    "eslint-config-egg/typescript",
-    "eslint-config-egg/lib/rules/enforce-node-prefix"
-  ]
+  "extends": "eslint-config-egg/typescript",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
 }
