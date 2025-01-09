@@ -1,5 +1,5 @@
 import { Service } from 'egg';
-import { IGetNewsListParams, IHttpGetParams, IPageDate, INewsData } from '../../typings';
+import { IGetNewsListParams, IPageDate, INewsData } from '../../typings';
 import { getPageData } from '../lib/utils';
 
 /**
@@ -14,7 +14,7 @@ export default class Api extends Service {
     const pageCount: number = count || 10; // 每页多少条数据
 
     // 请求数据
-    return ctx.httpGet(<IHttpGetParams>{
+    return ctx.httpGet({
       url: ctx.app.config.API.GET_NEWS_LIST,
       data: {
         type: type || 'top'

@@ -1,13 +1,13 @@
 import { IPageDate } from "../../typings";
 
 /* 判断数据类型 */
-function typeOf(value: string): string {
+function typeOf(value: any): string {
     if (value === null) return 'null';
 
     return typeof(value) === 'object' ? {
         '[object Object]': 'Object',
         '[object Array]': 'Array'
-    }[{}.toString.call(value)] : typeof(value);
+    }[Object.prototype.toString.call(value)] as string : typeof(value);
 }
 
 /* 将参数组装到url地址栏后面 */
