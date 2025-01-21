@@ -9,8 +9,8 @@ export default class ApiController extends Controller {
   public async getNewsList(): Promise<void> {
     const { ctx } = this;
     // 从请求体内拿到请求参数
-    const { type, pageNum, count }: IGetNewsListParams = ctx.request.body
+    const { type, pageNum, pageSize }: IGetNewsListParams = ctx.request.body
     // 执行service内的getNewList方法，请求数据
-    ctx.body = await ctx.service.api.getNewsList({ type, pageNum, count })
+    ctx.body = await ctx.service.api.getNewsList({ type, pageNum, pageSize })
   }
 }

@@ -7,11 +7,11 @@ import { getPageData } from '../lib/utils';
  */
 // export default class Test extends Service {
 export default class Api extends Service {
-  public async getNewsList({ type, pageNum, count }: IGetNewsListParams): Promise<IPageDate<INewsData>> {
+  public async getNewsList({ type, pageNum, pageSize }: IGetNewsListParams): Promise<IPageDate<INewsData>> {
     const { ctx } = this;
     // 默认值设置
     const pageNumber: number = pageNum || 0;  // 第几页
-    const pageCount: number = count || 10; // 每页多少条数据
+    const pageCount: number = pageSize || 10; // 每页多少条数据
 
     // 请求数据
     return ctx.httpGet({

@@ -9,7 +9,7 @@ interface IHttpGetParams {
 interface IGetNewsListParams {
     type: string,
     pageNum: number,
-    count: number
+    pageSize: number
 }
 
 interface IPageDate<T> {
